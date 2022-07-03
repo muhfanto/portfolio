@@ -5,7 +5,7 @@
 
 body {
   background: #ffff;
-    overflow: hidden;  
+    overflow-x: hidden;  
 }
 
 #projects {

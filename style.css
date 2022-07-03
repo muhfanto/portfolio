@@ -1,0 +1,67 @@
+.jumbotron {
+  /* padding-top: 0rem; */
+  background-color: #ffff;
+}
+
+body {
+  background: #ffff;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  overflow: hidden;
+}
+
+#projects {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
+}
+
+/* Animasi Wave */
+.ocean {
+  height: 0%;
+  width: 100;
+  position: absolute;
+  bottom: 100;
+  left: 0;
+  background: #2884b8;
+}
+
+.wave {
+  background: url(wave.svg) repeat-X;
+  position: absolute;
+  top: -190px;
+  width: 6350px;
+  height: 190px;
+  animation: wave 24.5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-last-of-type(2) {
+  top: -190px;
+  animation: wave 26s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+}
+
+.wave:nth-last-of-type(3) {
+  top: -190px;
+  animation: wave 25s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+/* @keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+} */

@@ -5,7 +5,7 @@
 
 body {
   background: #ffff;
-    overflow-x: hidden;  
+    overflow: hidden;  
 }
 
 #projects {
@@ -31,18 +31,18 @@ section {
   top: -190px;
   width: 6350px;
   height: 190px;
-  animation: wave 24.5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   transform: translate3d(0, 0, 0);
 }
 
 .wave:nth-last-of-type(2) {
   top: -190px;
-  animation: wave 26s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
 }
 
 .wave:nth-last-of-type(3) {
   top: -190px;
-  animation: wave 25s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+  animation: wave 5.5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
 }
 
 @keyframes wave {
